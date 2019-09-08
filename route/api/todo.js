@@ -36,7 +36,7 @@ router.put('/:id', function(req,res){
  	text:req.body.text || null,
 	completed: req.body.completed || null
 	}).returning('*').then(function(data){
-	req.send(data);
+	res.send(data);
 
 });
 });
