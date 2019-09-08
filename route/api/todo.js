@@ -46,7 +46,6 @@ router.delete('/:id', function(req,res){
 	db('list').where({id:req.params.id}).del().then(function(){
 
 		res.json({success:true});
-
 	});
 });
 
